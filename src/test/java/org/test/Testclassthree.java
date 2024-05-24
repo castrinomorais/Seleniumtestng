@@ -59,7 +59,7 @@ public class Testclassthree {
 		WebDriver driver;
 		driver =new ChromeDriver();
 		driver.get("https://www.leafground.com/file.xhtml;jsessionid=node010nx464jtc8vzxsmrg4fp0yu9138.node0");
-//To automate download file and check if the file is downloaded in the repository or not 		
+//To automate download file and check if the file is downloaded in the directory or not 		
 		PageFactory.initElements(driver,PageObjects.class);
  		PageObjects.downloadButton.click();
 		File fileLocation=new File("C:\\Users\\DELL\\Downloads");

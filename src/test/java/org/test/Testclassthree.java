@@ -38,7 +38,7 @@ public class Testclassthree {
 		PageObjects.clearText.clear();
 		
 		//Retrieve the typed text
-		String textWithinTheBox =PageObjects. retrieveText.getText();
+		String textWithinTheBox =PageObjects. retrieveText.getAttribute("value");
 		System.out.println(textWithinTheBox);
 		driver.close();
 	}
@@ -47,6 +47,7 @@ public class Testclassthree {
 	public void uploadOperation() {
 		WebDriver driver;
 		driver =new ChromeDriver();
+		// To automate proces of upload by sending the filepath of the file to be uploaded in the sendkeys
 		driver.get("https://www.leafground.com/file.xhtml;jsessionid=node010nx464jtc8vzxsmrg4fp0yu9138.node0");
 		PageFactory.initElements(driver,PageObjects.class);
 		PageObjects.uploadButton.sendKeys("C:\\Users\\DELL\\Downloads\\timetableexams.pdf");
@@ -58,7 +59,8 @@ public class Testclassthree {
 		WebDriver driver;
 		driver =new ChromeDriver();
 		driver.get("https://www.leafground.com/file.xhtml;jsessionid=node010nx464jtc8vzxsmrg4fp0yu9138.node0");
-		 PageFactory.initElements(driver,PageObjects.class);
+//To automate download file and check if the file is downloaded in the repository or not 		
+		PageFactory.initElements(driver,PageObjects.class);
  		PageObjects.downloadButton.click();
 		File fileLocation=new File("C:\\Users\\DELL\\Downloads");
 		 File[] totalFiles = fileLocation.listFiles();
@@ -103,7 +105,7 @@ public class Testclassthree {
 
 @Test
 public void hyperLinks() {
-	// Take me to Dashboard
+	
 		WebDriver driver;
 		driver =new ChromeDriver();
 		driver.navigate().to("https://www.leafground.com/link.xhtml;jsessionid=node010nx464jtc8vzxsmrg4fp0yu9138.node0");
@@ -118,23 +120,12 @@ public void hyperLinks() {
 	  	 String url = PageObjects.findmyDestination.getAttribute("href");
 		 System.out.println(url);
 		 
-		 // to find broken link or not 
-		 PageFactory.initElements(driver,PageObjects.class);
-	  		PageObjects.Broken.click();
-		 String titleValue = driver.getTitle();
-		 if(titleValue.contains("404")){
-			 System.out.println("It is a broken link ");
-			 }
-		 else
-		 {
-			 System.out.println("Not a broken link ");
-		 }
-		 driver.navigate().back();
 		 
 		 //To count the number of links 
 		 List<WebElement> totalLinks = driver.findElements(By.tagName("a"));
 		 int countOfLinks = totalLinks.size();
 		 System.out.println(countOfLinks);
+		 driver.close();
 
 	
 }}

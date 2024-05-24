@@ -3,6 +3,11 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="classes" name="Test(failed)">
     <classes>
+      <class name="org.test.Testclassone">
+        <methods>
+          <include name="seleniumAlerts"/>
+        </methods>
+      </class> <!-- org.test.Testclassone -->
       <class name="org.test.Testclassthree">
         <methods>
           <include name="textBox"/>

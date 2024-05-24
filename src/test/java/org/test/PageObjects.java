@@ -85,4 +85,13 @@ public class PageObjects {
 	
 	@FindBy(linkText="Broken?")
 	public static WebElement Broken;
+	
+	@FindBy(id="j_idt88:j_idt91")
+	public static WebElement openmultipleButton;
+	
+	@FindBy(xpath="//*[@id='Click']")
+	public static WebElement clickMebuttonTwo;
+	
+	@FindBy(xpath="/html/body/div[1]/div[5]/div[2]/form/div/div[1]/div[1]/div/div/table/tbody/tr/td[1]/div/div[2]")
+	public static WebElement fireFoxRadioButton;
 }

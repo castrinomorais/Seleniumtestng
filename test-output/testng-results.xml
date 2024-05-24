@@ -2,84 +2,84 @@
 <testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-24T01:00:21 IST" name="Suite" finished-at="2024-05-24T01:01:24 IST" duration-ms="62614">
+  <suite started-at="2024-05-24T12:05:25 IST" name="Suite" finished-at="2024-05-24T12:06:35 IST" duration-ms="69825">
     <groups>
     </groups>
-    <test started-at="2024-05-24T01:00:21 IST" name="Test" finished-at="2024-05-24T01:01:24 IST" duration-ms="62614">
+    <test started-at="2024-05-24T12:05:25 IST" name="Test" finished-at="2024-05-24T12:06:35 IST" duration-ms="69825">
       <class name="org.test.Testclassone">
-        <test-method signature="brokenLink()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T01:00:21 IST" name="brokenLink" finished-at="2024-05-24T01:00:30 IST" duration-ms="8830" status="PASS">
+        <test-method signature="brokenLink()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T12:05:26 IST" name="brokenLink" finished-at="2024-05-24T12:05:34 IST" duration-ms="8926" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- brokenLink -->
-        <test-method signature="screenShot()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T01:00:30 IST" name="screenShot" finished-at="2024-05-24T01:00:38 IST" duration-ms="8004" status="PASS">
+        <test-method signature="screenShot()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T12:05:34 IST" name="screenShot" finished-at="2024-05-24T12:05:43 IST" duration-ms="8762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- screenShot -->
-        <test-method signature="scrollaWebPage()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T01:00:38 IST" name="scrollaWebPage" finished-at="2024-05-24T01:00:56 IST" duration-ms="18565" status="PASS">
+        <test-method signature="scrollaWebPage()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T12:05:43 IST" name="scrollaWebPage" finished-at="2024-05-24T12:05:59 IST" duration-ms="15323" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- scrollaWebPage -->
-        <test-method signature="seleniumAlerts()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T01:00:56 IST" name="seleniumAlerts" finished-at="2024-05-24T01:01:05 IST" duration-ms="8190" status="PASS">
+        <test-method signature="seleniumAlerts()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T12:05:59 IST" name="seleniumAlerts" finished-at="2024-05-24T12:06:07 IST" duration-ms="8106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumAlerts -->
-        <test-method signature="seleniumDropDown()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T01:01:05 IST" name="seleniumDropDown" finished-at="2024-05-24T01:01:15 IST" duration-ms="10394" status="PASS">
+        <test-method signature="seleniumDropDown()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T12:06:07 IST" name="seleniumDropDown" finished-at="2024-05-24T12:06:15 IST" duration-ms="8430" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumDropDown -->
-        <test-method signature="seleniumPromptAlerts()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T01:01:15 IST" name="seleniumPromptAlerts" finished-at="2024-05-24T01:01:19 IST" duration-ms="3667" status="PASS">
+        <test-method signature="seleniumPromptAlerts()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T12:06:15 IST" name="seleniumPromptAlerts" finished-at="2024-05-24T12:06:28 IST" duration-ms="12505" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumPromptAlerts -->
-        <test-method signature="waysToReloadWebPage()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T01:01:19 IST" name="waysToReloadWebPage" finished-at="2024-05-24T01:01:24 IST" duration-ms="4893" status="PASS">
+        <test-method signature="waysToReloadWebPage()[pri:0, instance:org.test.Testclassone@a530d0a]" started-at="2024-05-24T12:06:28 IST" name="waysToReloadWebPage" finished-at="2024-05-24T12:06:35 IST" duration-ms="7713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- waysToReloadWebPage -->
       </class> <!-- org.test.Testclassone -->
       <class name="org.test.Testclassthree">
-        <test-method signature="downloadAndValidation()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T01:00:21 IST" name="downloadAndValidation" finished-at="2024-05-24T01:00:30 IST" duration-ms="8459" status="PASS">
+        <test-method signature="downloadAndValidation()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T12:05:26 IST" name="downloadAndValidation" finished-at="2024-05-24T12:05:34 IST" duration-ms="8867" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- downloadAndValidation -->
-        <test-method signature="explicitWait()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T01:00:30 IST" name="explicitWait" finished-at="2024-05-24T01:00:46 IST" duration-ms="16530" status="PASS">
+        <test-method signature="explicitWait()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T12:05:34 IST" name="explicitWait" finished-at="2024-05-24T12:05:52 IST" duration-ms="17385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- explicitWait -->
-        <test-method signature="hyperLinks()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T01:00:46 IST" name="hyperLinks" finished-at="2024-05-24T01:00:54 IST" duration-ms="8259" status="PASS">
+        <test-method signature="hyperLinks()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T12:05:52 IST" name="hyperLinks" finished-at="2024-05-24T12:06:02 IST" duration-ms="9894" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- hyperLinks -->
-        <test-method signature="textBox()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T01:00:54 IST" name="textBox" finished-at="2024-05-24T01:01:03 IST" duration-ms="8463" status="PASS">
+        <test-method signature="textBox()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T12:06:02 IST" name="textBox" finished-at="2024-05-24T12:06:10 IST" duration-ms="8564" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textBox -->
-        <test-method signature="uploadOperation()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T01:01:03 IST" name="uploadOperation" finished-at="2024-05-24T01:01:15 IST" duration-ms="12128" status="PASS">
+        <test-method signature="uploadOperation()[pri:0, instance:org.test.Testclassthree@4efc180e]" started-at="2024-05-24T12:06:10 IST" name="uploadOperation" finished-at="2024-05-24T12:06:26 IST" duration-ms="15327" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- uploadOperation -->
       </class> <!-- org.test.Testclassthree -->
       <class name="org.test.Testclasstwo">
-        <test-method signature="checkBox()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T01:00:21 IST" name="checkBox" finished-at="2024-05-24T01:00:32 IST" duration-ms="10979" status="PASS">
+        <test-method signature="checkBox()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T12:05:26 IST" name="checkBox" finished-at="2024-05-24T12:05:36 IST" duration-ms="10295" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkBox -->
-        <test-method signature="numberOfFramesInWebpage()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T01:00:32 IST" name="numberOfFramesInWebpage" finished-at="2024-05-24T01:00:39 IST" duration-ms="7042" status="PASS">
+        <test-method signature="numberOfFramesInWebpage()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T12:05:36 IST" name="numberOfFramesInWebpage" finished-at="2024-05-24T12:05:43 IST" duration-ms="7125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- numberOfFramesInWebpage -->
-        <test-method signature="seleniumIframes()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T01:00:39 IST" name="seleniumIframes" finished-at="2024-05-24T01:00:46 IST" duration-ms="6545" status="PASS">
+        <test-method signature="seleniumIframes()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T12:05:43 IST" name="seleniumIframes" finished-at="2024-05-24T12:05:50 IST" duration-ms="7300" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumIframes -->
-        <test-method signature="seleniumRadioButtons()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T01:00:46 IST" name="seleniumRadioButtons" finished-at="2024-05-24T01:00:52 IST" duration-ms="6507" status="PASS">
+        <test-method signature="seleniumRadioButtons()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T12:05:50 IST" name="seleniumRadioButtons" finished-at="2024-05-24T12:05:57 IST" duration-ms="7003" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- seleniumRadioButtons -->
-        <test-method signature="windowHandlesExercise()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T01:00:52 IST" name="windowHandlesExercise" finished-at="2024-05-24T01:01:02 IST" duration-ms="10361" status="PASS">
+        <test-method signature="windowHandlesExercise()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T12:05:57 IST" name="windowHandlesExercise" finished-at="2024-05-24T12:06:08 IST" duration-ms="11107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- windowHandlesExercise -->
-        <test-method signature="windowHandlesExercisetwo()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T01:01:02 IST" name="windowHandlesExercisetwo" finished-at="2024-05-24T01:01:15 IST" duration-ms="12575" status="PASS">
+        <test-method signature="windowHandlesExercisetwo()[pri:0, instance:org.test.Testclasstwo@1a18644]" started-at="2024-05-24T12:06:08 IST" name="windowHandlesExercisetwo" finished-at="2024-05-24T12:06:25 IST" duration-ms="16648" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- windowHandlesExercisetwo -->

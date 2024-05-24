@@ -27,6 +27,7 @@ public class Testclassone {
 		WebDriver driver;
 		driver=new ChromeDriver();
 		driver.get("https://www.leafground.com/alert.xhtml;jsessionid=node01giy7aarhjuxb5abrss1elho9671082.node0");
+		// To click the ok button in an simple alert dialog box
 		PageFactory.initElements(driver,PageObjects.class);
 		PageObjects.simplealertButton.click();
 		Alert a=driver.switchTo().alert();
@@ -41,6 +42,7 @@ public class Testclassone {
 		driver =new ChromeDriver();
 		driver.get("https://www.leafground.com/alert.xhtml;jsessionid=node01giy7aarhjuxb5abrss1elho9671082.node0");
 		driver.manage().timeouts().implicitlyWait(5,TimeUnit.SECONDS);
+		//To input a text and click ok button in an prompt alert dialog box
 		PageFactory.initElements(driver, PageObjects.class);
 		PageObjects.promptalertButton.click();
 		Alert as = driver.switchTo().alert();
@@ -55,6 +57,7 @@ public class Testclassone {
 		WebDriver driver;
 		driver =new ChromeDriver();
 		driver.get("https://www.leafground.com/link.xhtml");
+		// To check a link is broken or not 
 		PageFactory.initElements(driver, PageObjects.class);
 		PageObjects.AmIBroken.click();
 		String brokenValue = driver.getTitle();
@@ -72,6 +75,7 @@ public class Testclassone {
 		WebDriver driver;
 		driver =new ChromeDriver();
 		driver.get("https://www.leafground.com/dashboard.xhtml");
+		// To perform screenshot operation using FileHandler
         TakesScreenshot ts=(TakesScreenshot)  driver;
         File source = ts.getScreenshotAs(OutputType.FILE);
         File des= new File("D:Screenshot.png");
@@ -85,12 +89,17 @@ public class Testclassone {
 		driver =new ChromeDriver();
 		driver.get("https://www.leafground.com/link.xhtml");
 		driver.get("https://www.guru99.com/upload-download-file-selenium-webdriver.html");
+		
+	//	Reload a page using location.reload and history.go
 		JavascriptExecutor js=(JavascriptExecutor) driver;
 		js.executeScript("location.reload()");
 		js.executeScript("history.go(0)");
+	
+		//Reload a page using Robot class
 		Robot rt = new Robot();
 		rt.keyPress(KeyEvent.VK_F5);
 		rt.keyRelease(KeyEvent.VK_F5);
+		driver.close();
 		
 	}
 	
@@ -126,16 +135,16 @@ public class Testclassone {
 		driver.get("https://www.leafground.com/select.xhtml");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		PageFactory.initElements(driver, PageObjects.class);
+		
+		// To select the options in the dropdown using selectByIndex and selectByVisibleText
 		Select sc= new  Select(PageObjects.favoriteautomationtool);
 		sc.selectByIndex(0);
 		sc.selectByVisibleText("Selenium");
-		// First select tool gets selcted and then selenium
-		//sc.deselectAll();
 		
+		// To get the count of number of options in dropdown and to print it 
 		List<WebElement> optionslist = sc.getOptions();
 		int numberofoptions = optionslist.size();
 		System.out.println(numberofoptions);
-		
 		driver.close();
 		
 	}

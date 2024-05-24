@@ -35,6 +35,7 @@ public class Testclasstwo {
 					
 	}
 	}
+	
 	@Test
 	public void windowHandlesExercisetwo() {
 		WebDriver driver;
@@ -43,13 +44,17 @@ public class Testclasstwo {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		// parent window contains window handle value of the parent
 		String parentwindow = driver.getWindowHandle();
-		WebElement openmultipleButton = driver.findElement(By.id("j_idt88:j_idt91"));
-		openmultipleButton.click();
+		
+		//Clicking the openmultipleButton opens child window 
+		PageFactory.initElements(driver, PageObjects.class);
+		PageObjects.openmultipleButton.click();
+		
 		//allwindowhandles set contain the window handle values of all the windows opened 
 		Set<String> allwindowhandles = driver.getWindowHandles();
 		// we use size method over the set to count the number of window handles values of the windows opened stored in the set
 		int numberofwindows = allwindowhandles.size();
-	//	The value returned by the set method stored in a variable is printed
+		
+	//	The value returned by the size method stored in a variable is printed and also all windowhandle values are also printed
 		System.out.println(numberofwindows);
 		System.out.println(allwindowhandles);
 		driver.quit();
@@ -63,21 +68,22 @@ public class Testclasstwo {
 				driver.get("https://www.leafground.com/frame.xhtml");
 				driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 				driver.switchTo().frame(0);
-				WebElement clickMebutton = driver.findElement(By.xpath("(//button[@id=\'Click\'])[1]"));
-				clickMebutton.click();
-				String textvalue = clickMebutton.getText();
+				PageFactory.initElements(driver, PageObjects.class);
+				PageObjects.clickMebuttonTwo.click();
+				String textvalue = PageObjects.clickMebuttonTwo.getText();
 				System.out.println(textvalue);
 				driver.quit();
 	}
 	@Test
 	public void numberOfFramesInWebpage() {
+		// To find the number of iframes
 		WebDriver driver;
 		driver =new ChromeDriver();
 		driver.get("https://www.leafground.com/frame.xhtml");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-	List<WebElement> frames = driver.findElements(By.tagName("iframe"));
-	System.out.println(frames);
-	int totalframes = frames.size();
+	    List<WebElement> frames = driver.findElements(By.tagName("iframe"));
+	    System.out.println(frames);
+	    int totalframes = frames.size();
 		System.out.println("The total number of frames in webpage "+     +totalframes);
 		driver.close();
 	}
@@ -91,28 +97,25 @@ public class Testclasstwo {
 		driver.get("https://www.leafground.com/checkbox.xhtml");
 		//Select a basic checkbox
 		PageFactory.initElements(driver,PageObjects.class);
-		//WebElement basicCheckbox = driver.findElement(By.xpath("(//div[@class=\'ui-chkbox-box ui-widget ui-corner-all ui-state-default\'])[1]"));
+		
 		PageObjects.basicCheckbox.click();
 		
 		//Selecting multiple checkboxes
 		
-		//WebElement javaCheckbox = driver.findElement(By.xpath("(//div[@class=\'ui-chkbox-box ui-widget ui-corner-all ui-state-default\'])[3]"));
 		PageObjects.javaCheckbox.click();
 		
-		//WebElement pythonCheckbox = driver.findElement(By.xpath("(//div[@class=\'ui-chkbox-box ui-widget ui-corner-all ui-state-default\'])[4]"));
 		PageObjects.pythonCheckbox.click();
 		 
 		 //To Select a toggle switch slider
-		// WebElement toogleSwitch = driver.findElement(By.xpath("//*[@class=\'ui-toggleswitch-slider\']"));
+
 		PageObjects.toogleSwitch.click();
 		 
 		 //To verify if the check box is disabled 
-		 //WebElement disabledCheckbox = driver.findElement(By.xpath("/html/body/div[1]/div[5]/div[2]/form/div/div[2]/div[2]/div/div/div"));
+		 
 		PageObjects.disabledCheckbox.click();
 		boolean enabledStatusOfCheckbox= PageObjects.disabledCheckbox.isEnabled();
-		 System.out.println(enabledStatusOfCheckbox);
-		 
-	driver.close();
+		System.out.println(enabledStatusOfCheckbox);
+		driver.close();
 		 
 	}
 	
@@ -123,19 +126,20 @@ public class Testclasstwo {
 		driver.get("https://www.leafground.com/radio.xhtml");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		//Selecting a radio button
-		driver.findElement(By.xpath("/html/body/div[1]/div[5]/div[2]/form/div/div[1]/div[1]/div/div/table/tbody/tr/td[1]/div/div[2]")).click();
+		 PageFactory.initElements(driver,PageObjects.class);
+		 PageObjects.fireFoxRadioButton.click();
 		
 		
-		//Status of the radio button safari0 in the Find default selection radio button
-		PageFactory.initElements(driver,PageObjects.class);
-		boolean selectioStatusOfSafari = PageObjects.Safari.isSelected();	
-		boolean displayStatusOfSafari = PageObjects.Safari.isDisplayed();
-		boolean enabledStatusOfSafari = PageObjects.Safari.isEnabled();
+	 //Status of the radio button safari in the Find default selection radio button
+	  PageFactory.initElements(driver,PageObjects.class);
+	  boolean selectionStatusOfSafari = PageObjects.Safari.isSelected();	
+	  boolean displayStatusOfSafari = PageObjects.Safari.isDisplayed();
+	  boolean enabledStatusOfSafari = PageObjects.Safari.isEnabled();
 
-System.out.println(selectioStatusOfSafari);
-System.out.println(displayStatusOfSafari);
-System.out.println(enabledStatusOfSafari);
-driver.close();
+     System.out.println(selectionStatusOfSafari);
+     System.out.println(displayStatusOfSafari);
+     System.out.println(enabledStatusOfSafari);
+     driver.close();
 	}
 
 }

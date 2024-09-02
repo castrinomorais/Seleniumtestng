@@ -82,7 +82,6 @@ public class Testclasstwo {
 		driver.get("https://www.leafground.com/frame.xhtml");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	    List<WebElement> frames = driver.findElements(By.tagName("iframe"));
-	    System.out.println(frames);
 	    int totalframes = frames.size();
 		System.out.println("The total number of frames in webpage "+     +totalframes);
 		driver.close();
@@ -92,7 +91,6 @@ public class Testclasstwo {
 	public void checkBox() {
 		WebDriver driver;
 		driver =new ChromeDriver();
-		driver.get("https://www.leafground.com/radio.xhtml");
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.get("https://www.leafground.com/checkbox.xhtml");
 		//Select a basic checkbox
@@ -111,9 +109,7 @@ public class Testclasstwo {
 		PageObjects.toogleSwitch.click();
 		 
 		 //To verify if the check box is disabled 
-		 
-		PageObjects.disabledCheckbox.click();
-		boolean enabledStatusOfCheckbox= PageObjects.disabledCheckbox.isEnabled();
+		 boolean enabledStatusOfCheckbox= PageObjects.disabledCheckbox.isEnabled();
 		System.out.println(enabledStatusOfCheckbox);
 		driver.close();
 		 

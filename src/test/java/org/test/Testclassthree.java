@@ -37,7 +37,7 @@ public class Testclassthree {
 		//Clear the typed text
 		PageObjects.clearText.clear();
 		
-		//Retrieve the typed text
+		//Retrieve the  text
 		String textWithinTheBox =PageObjects. retrieveText.getAttribute("value");
 		System.out.println(textWithinTheBox);
 		driver.close();
@@ -47,7 +47,8 @@ public class Testclassthree {
 	public void uploadOperation() {
 		WebDriver driver;
 		driver =new ChromeDriver();
-		// To automate proces of upload by sending the filepath of the file to be uploaded in the sendkeys
+		// To automate process of upload by sending the filepath of the file to be uploaded in the sendkeys along with
+		//.type of the file to be uploaded
 		driver.get("https://www.leafground.com/file.xhtml;jsessionid=node010nx464jtc8vzxsmrg4fp0yu9138.node0");
 		PageFactory.initElements(driver,PageObjects.class);
 		PageObjects.uploadButton.sendKeys("C:\\Users\\DELL\\Downloads\\timetableexams.pdf");
